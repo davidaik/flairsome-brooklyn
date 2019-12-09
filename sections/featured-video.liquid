@@ -1,0 +1,175 @@
+<div class="wrapper">
+  {% if section.settings.heading != blank %}
+    <div class="section-header text-center">
+      <h2 class="h1 section-header__title">{{ section.settings.heading | escape }}</h2>
+      <hr class="hr--small">
+    </div>
+  {% endif %}
+  <div class="grid">
+    <div class="grid__item one-whole">
+      <div class="video-wrapper">
+        {% if section.settings.video_url == blank %}
+          <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+        {% else %}
+          {% if section.settings.video_url.type == "youtube" %}
+            <iframe src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+          {% endif %}
+          {% if section.settings.video_url.type == "vimeo" %}
+            <iframe src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?color={{ settings.color_secondary | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "da": "Video",
+    "de": "Video",
+    "en": "Video",
+    "es": "Video",
+    "fi": "Video",
+    "fr": "Vidéo",
+    "hi": "वीडियो",
+    "it": "Video",
+    "ja": "ビデオ",
+    "ko": "동영상",
+    "ms": "Video",
+    "nb": "Video",
+    "nl": "Video",
+    "pt-BR": "Vídeo",
+    "pt-PT": "Vídeo",
+    "sv": "Video",
+    "th": "วิดีโอ",
+    "zh-CN": "视频",
+    "zh-TW": "影片"
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": {
+        "da": "Overskrift",
+        "de": "Überschrift",
+        "en": "Heading",
+        "es": "Título",
+        "fi": "Otsake",
+        "fr": "Titre",
+        "hi": "शीर्षक",
+        "it": "Heading",
+        "ja": "見出し",
+        "ko": "제목",
+        "ms": "Tajuk",
+        "nb": "Overskrift",
+        "nl": "Kop",
+        "pt-BR": "Título",
+        "pt-PT": "Título",
+        "sv": "Rubrik",
+        "th": "ส่วนหัว",
+        "zh-CN": "标题",
+        "zh-TW": "標題"
+      },
+      "default": {
+        "da": "Video",
+        "de": "Video",
+        "en": "Video",
+        "es": "Video",
+        "fi": "Video",
+        "fr": "Vidéo",
+        "hi": "वीडियो",
+        "it": "Video",
+        "ja": "ビデオ",
+        "ko": "동영상",
+        "ms": "Video",
+        "nb": "Video",
+        "nl": "Video",
+        "pt-BR": "Vídeo",
+        "pt-PT": "Vídeo",
+        "sv": "Video",
+        "th": "วิดีโอ",
+        "zh-CN": "视频",
+        "zh-TW": "影片"
+      }
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": {
+        "da": "Videolink",
+        "de": "Videolink",
+        "en": "Video link",
+        "es": "Enlace de video",
+        "fi": "Videolinkki",
+        "fr": "Lien de la vidéo",
+        "hi": "वीडियो लिंक",
+        "it": "Link video",
+        "ja": "ビデオリンク",
+        "ko": "동영상 링크",
+        "ms": "Pautan video",
+        "nb": "Videokobling",
+        "nl": "Videolink",
+        "pt-BR": "Link do vídeo",
+        "pt-PT": "Ligação do vídeo",
+        "sv": "Videolänk",
+        "th": "ลิงก์วิดีโอ",
+        "zh-CN": "视频链接",
+        "zh-TW": "影片連結"
+      },
+      "accept": [
+        "youtube",
+        "vimeo"
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "da": "Video",
+        "de": "Video",
+        "en": "Video",
+        "es": "Video",
+        "fi": "Video",
+        "fr": "Vidéo",
+        "hi": "वीडियो",
+        "it": "Video",
+        "ja": "ビデオ",
+        "ko": "동영상",
+        "ms": "Video",
+        "nb": "Video",
+        "nl": "Video",
+        "pt-BR": "Vídeo",
+        "pt-PT": "Vídeo",
+        "sv": "Video",
+        "th": "วิดีโอ",
+        "zh-CN": "视频",
+        "zh-TW": "影片"
+      },
+      "category": {
+        "da": "Video",
+        "de": "Video",
+        "en": "Video",
+        "es": "Video",
+        "fi": "Video",
+        "fr": "Vidéo",
+        "hi": "वीडियो",
+        "it": "Video",
+        "ja": "動画",
+        "ko": "동영상",
+        "ms": "Video",
+        "nb": "Video",
+        "nl": "Video",
+        "pt-BR": "Vídeo",
+        "pt-PT": "Vídeo",
+        "sv": "Video",
+        "th": "วิดีโอ",
+        "zh-CN": "视频",
+        "zh-TW": "影片"
+      }
+    }
+  ]
+}
+{% endschema %}
