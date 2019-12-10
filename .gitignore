@@ -1,2 +1,6 @@
+dist/
 node_modules/
+upload/
+
 config.yml
+deploy.log
