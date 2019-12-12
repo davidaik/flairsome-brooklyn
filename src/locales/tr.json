@@ -26,7 +26,6 @@
       "signup_form_success": "Açılıştan hemen önce size e-posta göndereceğiz!",
       "admin_link_html": "Mağaza sahibi misiniz? <a href=\"/admin\" class=\"text-link\">Buradan oturum açın</a>",
       "password_link": "Parola kullanarak girin",
-      "powered_by_shopify_html": "Bu mağaza {{ shopify }} tarafından desteklenir",
       "close": "kapat (esc)"
     },
     "social": {

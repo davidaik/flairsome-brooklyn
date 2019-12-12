@@ -225,7 +225,13 @@
                 {%- if shop.taxes_included -%}
                   {{ 'products.general.include_taxes' | t }}
                 {%- endif -%}
-                {%- if shop.shipping_policy.body != blank -%}
+                {%- if settings.free_shipping -%}
+                  {%- if shop.shipping_policy.body != blank -%}
+                    {{ 'products.general.free_shipping_html' | t: link: shop.shipping_policy.url }}
+                  {%- else -%}
+                    {{ 'products.general.free_shipping' | t }}
+                  {%- endif -%}
+                {%- elsif shop.shipping_policy.body != blank -%}
                   {{ 'products.general.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                 {%- endif -%}
               </div>
@@ -336,6 +342,12 @@
       </div>
     </div>
 </div>
+
+{% if section.settings.product_reviews_enable %}
+  <hr>
+  <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+{% endif %}
+
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
     {{ product | json }}
@@ -567,7 +579,8 @@
         "th": "แสดงตัวเลือกจำนวน",
         "zh-CN": "显示数量选择器",
         "zh-TW": "顯示數量選擇器"
-      }
+      },
+      "default": true
     },
     {
       "type": "select",
@@ -790,6 +803,22 @@
           }
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "product_reviews_enable",
+      "label": {
+        "de": "Produktbewertungen aktivieren",
+        "en": "Enable product reviews",
+        "es": "Habilitar reseñas de productos",
+        "fr": "Activer les avis sur les produits",
+        "it": "Abilita recensioni di prodotto",
+        "ja": "商品レビューを有効にする",
+        "nl": "Productbeoordelingen inschakelen",
+        "pt-BR": "Habilitar as avaliações de produtos",
+        "zh-CN": "启用产品评论",
+        "zh-TW": "啟用產品評論"
+      }
     }
   ]
 }

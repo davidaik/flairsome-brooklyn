@@ -26,7 +26,6 @@
       "signup_form_success": "Těsně než otevřeme, pošleme vám e-mail!",
       "admin_link_html": "Jste vlastníkem obchodu? <a href=\"/admin\" class=\"text-link\">Přihlaste se zde</a>",
       "password_link": "Vstoupit pomocí hesla",
-      "powered_by_shopify_html": "Tento obchod poběží na platformě {{ shopify }}",
       "close": "zavřít (esc)"
     },
     "social": {

@@ -26,7 +26,6 @@
       "signup_form_success": "खुलने से ठीक पहले हम आपको एक ईमेल भेजेंगे!",
       "admin_link_html": "क्या आप स्टोर के मालिक हैं? <a href=\"/admin\" class=\"text-link\">यहां लॉगिन करें</a>",
       "password_link": "पासवर्ड का उपयोग करके प्रवेश करें",
-      "powered_by_shopify_html": "यह दुकान {{ shopify }} द्वारा संचालित होगी",
       "close": "बंद करें (esc)"
     },
     "social": {

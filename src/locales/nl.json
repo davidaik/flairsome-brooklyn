@@ -26,7 +26,6 @@
       "signup_form_success": "Wij sturen u een e-mail nog voordat we open gaan!",
       "admin_link_html": "Bent u de winkeleigenaar? <a href=\"/admin\" class=\"text-link\">Log hier in</a>",
       "password_link": "Ga naar binnen met wachtwoord",
-      "powered_by_shopify_html": "Deze winkel wordt door {{ shopify }} aangedreven",
       "close": "sluiten (esc)"
     },
     "social": {

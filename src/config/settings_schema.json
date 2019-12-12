@@ -2028,6 +2028,205 @@
           "zh-CN": "将缩小到 32 x 32px",
           "zh-TW": "將會縮小為 32 x 32 像素"
         }
+      },
+      {
+        "type": "header",
+        "content": {
+          "de": "Shortcut Icons",
+          "en": "Shortcut Icons",
+          "es": "Shortcut Icons",
+          "fr": "Shortcut Icons",
+          "it": "Shortcut Icons",
+          "ja": "Shortcut Icons",
+          "nl": "Shortcut Icons",
+          "pt-BR": "Shortcut Icons",
+          "zh-CN": "Shortcut Icons",
+          "zh-TW": "Shortcut Icons"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "shortcut_icon_192",
+        "label": {
+          "de": "Shortcut icon",
+          "en": "Shortcut icon",
+          "es": "Shortcut icon",
+          "fr": "Shortcut icon",
+          "it": "Shortcut icon",
+          "ja": "Shortcut icon",
+          "nl": "Shortcut icon",
+          "pt-BR": "Shortcut icon",
+          "zh-CN": "Shortcut icon",
+          "zh-TW": "Shortcut icon"
+        },
+        "info": {
+          "de": "Size: 192 x 192px",
+          "en": "Size: 192 x 192px",
+          "es": "Size: 192 x 192px",
+          "fr": "Size: 192 x 192px",
+          "it": "Size: 192 x 192px",
+          "ja": "Size: 192 x 192px",
+          "nl": "Size: 192 x 192px",
+          "pt-BR": "Size: 192 x 192px",
+          "zh-CN": "Size: 192 x 192px",
+          "zh-TW": "Size: 192 x 192px"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "shortcut_icon_256",
+        "label": {
+          "de": "Shortcut icon",
+          "en": "Shortcut icon",
+          "es": "Shortcut icon",
+          "fr": "Shortcut icon",
+          "it": "Shortcut icon",
+          "ja": "Shortcut icon",
+          "nl": "Shortcut icon",
+          "pt-BR": "Shortcut icon",
+          "zh-CN": "Shortcut icon",
+          "zh-TW": "Shortcut icon"
+        },
+        "info": {
+          "de": "Size: 256 x 256px",
+          "en": "Size: 256 x 256px",
+          "es": "Size: 256 x 256px",
+          "fr": "Size: 256 x 256px",
+          "it": "Size: 256 x 256px",
+          "ja": "Size: 256 x 256px",
+          "nl": "Size: 256 x 256px",
+          "pt-BR": "Size: 256 x 256px",
+          "zh-CN": "Size: 256 x 256px",
+          "zh-TW": "Size: 256 x 256px"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "apple_touch_icon_114",
+        "label": {
+          "de": "Apple touch icon",
+          "en": "Apple touch icon",
+          "es": "Apple touch icon",
+          "fr": "Apple touch icon",
+          "it": "Apple touch icon",
+          "ja": "Apple touch icon",
+          "nl": "Apple touch icon",
+          "pt-BR": "Apple touch icon",
+          "zh-CN": "Apple touch icon",
+          "zh-TW": "Apple touch icon"
+        },
+        "info": {
+          "de": "Size: 114 x 114px",
+          "en": "Size: 114 x 114px",
+          "es": "Size: 114 x 114px",
+          "fr": "Size: 114 x 114px",
+          "it": "Size: 114 x 114px",
+          "ja": "Size: 114 x 114px",
+          "nl": "Size: 114 x 114px",
+          "pt-BR": "Size: 114 x 114px",
+          "zh-CN": "Size: 114 x 114px",
+          "zh-TW": "Size: 114 x 114px"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "apple_touch_icon_72",
+        "label": {
+          "de": "Apple touch icon",
+          "en": "Apple touch icon",
+          "es": "Apple touch icon",
+          "fr": "Apple touch icon",
+          "it": "Apple touch icon",
+          "ja": "Apple touch icon",
+          "nl": "Apple touch icon",
+          "pt-BR": "Apple touch icon",
+          "zh-CN": "Apple touch icon",
+          "zh-TW": "Apple touch icon"
+        },
+        "info": {
+          "de": "Size: 72 x 72px",
+          "en": "Size: 72 x 72px",
+          "es": "Size: 72 x 72px",
+          "fr": "Size: 72 x 72px",
+          "it": "Size: 72 x 72px",
+          "ja": "Size: 72 x 72px",
+          "nl": "Size: 72 x 72px",
+          "pt-BR": "Size: 72 x 72px",
+          "zh-CN": "Size: 72 x 72px",
+          "zh-TW": "Size: 72 x 72px"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "apple_touch_icon_57",
+        "label": {
+          "de": "Apple touch icon",
+          "en": "Apple touch icon",
+          "es": "Apple touch icon",
+          "fr": "Apple touch icon",
+          "it": "Apple touch icon",
+          "ja": "Apple touch icon",
+          "nl": "Apple touch icon",
+          "pt-BR": "Apple touch icon",
+          "zh-CN": "Apple touch icon",
+          "zh-TW": "Apple touch icon"
+        },
+        "info": {
+          "de": "Size: 57 x 57px",
+          "en": "Size: 57 x 57px",
+          "es": "Size: 57 x 57px",
+          "fr": "Size: 57 x 57px",
+          "it": "Size: 57 x 57px",
+          "ja": "Size: 57 x 57px",
+          "nl": "Size: 57 x 57px",
+          "pt-BR": "Size: 57 x 57px",
+          "zh-CN": "Size: 57 x 57px",
+          "zh-TW": "Size: 57 x 57px"
+        }
+      }
+    ]
+  },
+  {
+    "name": {
+      "de": "Tax and shipping",
+      "en": "Tax and shipping",
+      "es": "Tax and shipping",
+      "fr": "Tax and shipping",
+      "it": "Tax and shipping",
+      "ja": "Tax and shipping",
+      "nl": "Tax and shipping",
+      "pt-BR": "Tax and shipping",
+      "zh-CN": "Tax and shipping",
+      "zh-TW": "Tax and shipping"
+    },
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "free_shipping",
+        "label": {
+          "de": "Free shipping",
+          "en": "Free shipping",
+          "es": "Free shipping",
+          "fr": "Free shipping",
+          "it": "Free shipping",
+          "ja": "Free shipping",
+          "nl": "Free shipping",
+          "pt-BR": "Free shipping",
+          "zh-CN": "Free shipping",
+          "zh-TW": "Free shipping"
+        },
+        "info": {
+          "de": "Check this if you provide free shipping for ALL products on your store.",
+          "en": "Check this if you provide free shipping for ALL products on your store.",
+          "es": "Check this if you provide free shipping for ALL products on your store.",
+          "fr": "Check this if you provide free shipping for ALL products on your store.",
+          "it": "Check this if you provide free shipping for ALL products on your store.",
+          "ja": "Check this if you provide free shipping for ALL products on your store.",
+          "nl": "Check this if you provide free shipping for ALL products on your store.",
+          "pt-BR": "Check this if you provide free shipping for ALL products on your store.",
+          "zh-CN": "Check this if you provide free shipping for ALL products on your store.",
+          "zh-TW": "Check this if you provide free shipping for ALL products on your store."
+        }
       }
     ]
   }

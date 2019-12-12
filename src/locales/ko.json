@@ -26,7 +26,6 @@
       "signup_form_success": "개장 직전에 이메일을 송신해드립니다!",
       "admin_link_html": "스토어 소유주입니까? <a href=\"/admin\" class=\"text-link\">여기에 로그인 하기</a>",
       "password_link": "비밀번호를 사용하여 입력하십시오.",
-      "powered_by_shopify_html": "이 상점은 {{ shopify }}에 의해 운영됩니다.",
       "close": "닫기 (esc)"
     },
     "social": {

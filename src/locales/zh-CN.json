@@ -26,7 +26,6 @@
       "signup_form_success": "在我们打开之前，我们会向您发送电子邮件！",
       "admin_link_html": "您是否是商店所有者？<a href=\"/admin\" class=\"text-link\">在此处登录</a>",
       "password_link": "使用密码进入",
-      "powered_by_shopify_html": "此商店由 {{ shopify }} 提供支持",
       "close": "关闭 (esc)"
     },
     "social": {

@@ -26,7 +26,6 @@
       "signup_form_success": "Vi kommer att skicka ett e-postmeddelande precis innan vi öppnar!",
       "admin_link_html": "Är det du som är butiksägare? <a href=\"/admin\" class=\"text-link\">Logga in här</a>",
       "password_link": "Ange lösenord för att ta dig in",
-      "powered_by_shopify_html": "Denna butik kommer att drivas av {{ shopify }}",
       "close": "stäng (esc)"
     },
     "social": {

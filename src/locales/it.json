@@ -26,7 +26,6 @@
       "signup_form_success": "Ti invieremo un'email appena prima di aprire!",
       "admin_link_html": "Sei il proprietario del negozio? <a href=\"/admin\" class=\"text-link\">Accedi qui</a>",
       "password_link": "Accedi usando la password",
-      "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}",
       "close": "chiudi (esc)"
     },
     "social": {

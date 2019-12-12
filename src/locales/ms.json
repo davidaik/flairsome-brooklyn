@@ -26,7 +26,6 @@
       "signup_form_success": "Kami akan menghantar e-mel kepada anda sebelum kami buka!",
       "admin_link_html": "Adakah anda pemilik kedai? <a href=\"/admin\" class=\"text-link\">Log masuk di sini</a>",
       "password_link": "Masuk menggunakan kata laluan",
-      "powered_by_shopify_html": "Kedai ini akan dikuasakan oleh {{ shopify }}",
       "close": "tutup (esc)"
     },
     "social": {

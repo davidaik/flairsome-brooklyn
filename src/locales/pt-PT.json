@@ -26,7 +26,6 @@
       "signup_form_success": "Iremos enviar-lhe um e-mail imediatamente antes de abrirmos!",
       "admin_link_html": "É o dono da loja? <a href=\"/admin\" class=\"text-link\">Inicie sessão aqui</a>",
       "password_link": "Entre usando a palavra-passe",
-      "powered_by_shopify_html": "Esta loja irá contar com tecnologia {{ shopify }}",
       "close": "Encerrar (Esc)"
     },
     "social": {

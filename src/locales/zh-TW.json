@@ -26,7 +26,6 @@
       "signup_form_success": "我們會在即將開張前寄電子郵件通知您！",
       "admin_link_html": "您是店主嗎？<a href=\"/admin\" class=\"text-link\">請在此登入</a>",
       "password_link": "以密碼進入",
-      "powered_by_shopify_html": "本商店由 {{ shopify }} 提供技術支援",
       "close": "關閉 (esc)"
     },
     "social": {

@@ -26,7 +26,6 @@
       "signup_form_success": "ストアがオープンする直前にメールでお知らせします！",
       "admin_link_html": "あなたはストアのオーナーですか？<a href=\"/admin\" class=\"text-link\">こちらからログインする</a>",
       "password_link": "パスワードを入力してください",
-      "powered_by_shopify_html": "このお店は{{ shopify }}を使用しています",
       "close": "閉じる (esc)"
     },
     "social": {
