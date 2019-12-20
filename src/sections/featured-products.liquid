@@ -41,14 +41,31 @@
           {% endif %}
           {% assign divisible_by_three__product = collection_product_count__product | modulo:3 %}
 
-          {% for product in collections[section.settings.home_featured_products].products %}
+          {% comment %}
+          If section.settings.num_rows_collage is 0, display the entire collection,
+          otherwise display numbe of products equal to
+          [3 products per collage row multiplied by the number of rows].
+          {% endcomment %}
+          {% if section.settings.num_rows_collage == 0 %}
+            {% assign product_count_limit = collection_product_count__product %}
+          {% else %}
+            {% assign product_count_limit = section.settings.num_rows_collage | times: 3 %}
+          {% endif %}
+
+          {% for product in collections[section.settings.home_featured_products].products limit:product_count_limit %}
             {% include 'product-grid-collage' %}
           {% endfor %}
 
         {% else %}
 
+          {% if section.settings.num_rows_grid == 0 %}
+            {% assign product_count_limit = collection_product_count__product %}
+          {% else %}
+            {% assign product_count_limit = section.settings.num_rows_grid | times: 3 %}
+          {% endif %}
+
           {% assign grid_item_width = 'medium--one-half large--one-third' %}
-          {% for product in collections[section.settings.home_featured_products].products %}
+          {% for product in collections[section.settings.home_featured_products].products limit:product_count_limit %}
             {% include 'product-grid-item' %}
           {% endfor %}
 
@@ -230,6 +247,104 @@
           }
         }
       ]
+    },
+    {
+      "type": "range",
+      "id": "num_rows_collage",
+      "min": 0,
+      "max": 10,
+      "default": 0,
+      "label": {
+        "da": "Number of Collage rows",
+        "de": "Number of Collage rows",
+        "en": "Number of Collage rows",
+        "es": "Number of Collage rows",
+        "fi": "Number of Collage rows",
+        "fr": "Number of Collage rows",
+        "hi": "Number of Collage rows",
+        "it": "Number of Collage rows",
+        "ja": "Number of Collage rows",
+        "ko": "Number of Collage rows",
+        "ms": "Number of Collage rows",
+        "nb": "Number of Collage rows",
+        "nl": "Number of Collage rows",
+        "pt-BR": "Number of Collage rows",
+        "pt-PT": "Number of Collage rows",
+        "sv": "Number of Collage rows",
+        "th": "Number of Collage rows",
+        "zh-CN": "Number of Collage rows",
+        "zh-TW": "Number of Collage rows"
+      },
+      "info": {
+        "da": "Enter 0 to show all items in the collection.",
+        "de": "Enter 0 to show all items in the collection.",
+        "en": "Enter 0 to show all items in the collection.",
+        "es": "Enter 0 to show all items in the collection.",
+        "fi": "Enter 0 to show all items in the collection.",
+        "fr": "Enter 0 to show all items in the collection.",
+        "hi": "Enter 0 to show all items in the collection.",
+        "it": "Enter 0 to show all items in the collection.",
+        "ja": "Enter 0 to show all items in the collection.",
+        "ko": "Enter 0 to show all items in the collection.",
+        "ms": "Enter 0 to show all items in the collection.",
+        "nb": "Enter 0 to show all items in the collection.",
+        "nl": "Enter 0 to show all items in the collection.",
+        "pt-BR": "Enter 0 to show all items in the collection.",
+        "pt-PT": "Enter 0 to show all items in the collection.",
+        "sv": "Enter 0 to show all items in the collection.",
+        "th": "Enter 0 to show all items in the collection.",
+        "zh-CN": "Enter 0 to show all items in the collection.",
+        "zh-TW": "Enter 0 to show all items in the collection."
+      }
+    },
+    {
+      "type": "range",
+      "id": "num_rows_grid",
+      "min": 0,
+      "max": 10,
+      "default": 0,
+      "label": {
+        "da": "Number of Grid rows",
+        "de": "Number of Grid rows",
+        "en": "Number of Grid rows",
+        "es": "Number of Grid rows",
+        "fi": "Number of Grid rows",
+        "fr": "Number of Grid rows",
+        "hi": "Number of Grid rows",
+        "it": "Number of Grid rows",
+        "ja": "Number of Grid rows",
+        "ko": "Number of Grid rows",
+        "ms": "Number of Grid rows",
+        "nb": "Number of Grid rows",
+        "nl": "Number of Grid rows",
+        "pt-BR": "Number of Grid rows",
+        "pt-PT": "Number of Grid rows",
+        "sv": "Number of Grid rows",
+        "th": "Number of Grid rows",
+        "zh-CN": "Number of Grid rows",
+        "zh-TW": "Number of Grid rows"
+      },
+      "info": {
+        "da": "Enter 0 to show all items in the collection.",
+        "de": "Enter 0 to show all items in the collection.",
+        "en": "Enter 0 to show all items in the collection.",
+        "es": "Enter 0 to show all items in the collection.",
+        "fi": "Enter 0 to show all items in the collection.",
+        "fr": "Enter 0 to show all items in the collection.",
+        "hi": "Enter 0 to show all items in the collection.",
+        "it": "Enter 0 to show all items in the collection.",
+        "ja": "Enter 0 to show all items in the collection.",
+        "ko": "Enter 0 to show all items in the collection.",
+        "ms": "Enter 0 to show all items in the collection.",
+        "nb": "Enter 0 to show all items in the collection.",
+        "nl": "Enter 0 to show all items in the collection.",
+        "pt-BR": "Enter 0 to show all items in the collection.",
+        "pt-PT": "Enter 0 to show all items in the collection.",
+        "sv": "Enter 0 to show all items in the collection.",
+        "th": "Enter 0 to show all items in the collection.",
+        "zh-CN": "Enter 0 to show all items in the collection.",
+        "zh-TW": "Enter 0 to show all items in the collection."
+      }
     }
   ],
   "presets": [
