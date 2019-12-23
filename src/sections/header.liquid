@@ -59,8 +59,8 @@
 
       <header class="site-header{% if request.page_type == 'index' %} hero--color-0{% endif %}" role="banner">
         <div class="wrapper">
-          <div class="grid--full grid--table">
-            <div class="grid__item large--hide large--one-sixth one-quarter">
+          <div class="grid--full grid--flex">
+            <div class="grid__item large--hide large--one-sixth">
               <div class="site-nav--open site-nav--mobile">
                 <button type="button" class="icon-fallback-text site-nav__link site-nav__link--burger js-drawer-open-button-left" aria-controls="NavDrawer">
                   <span class="burger-icon burger-icon--top"></span>
@@ -70,7 +70,7 @@
                 </button>
               </div>
             </div>
-            <div class="grid__item large--one-third medium-down--one-half">
+            <div class="grid__item large--one-third medium-down--one-half flex-grow-1">
               {% comment %}
                 Use the uploaded logo from theme settings if enabled.
                 Site name gets precedence with H1 tag on homepage, div on other pages.
@@ -262,7 +262,7 @@
                     <span class="fallback-text">{{ 'general.search.title' | t }}</span>
                   </span>
                 </a>
-                <a href="{{ routes.cart_url }}" class="site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
+                <a href="{{ routes.cart_url }}" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
                   <span class="icon-fallback-text">
                     <span class="icon icon-cart" aria-hidden="true"></span>
                     <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
