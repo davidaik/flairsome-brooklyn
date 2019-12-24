@@ -76,8 +76,10 @@
       {% endif %}
     </div>
   </div>
+  {% if product_count_limit < collection.products_count %}
   <a href="{{ collection.url }}" class="flairsome-featured-collection-view-all">{{ 'collections.general.view_all' | t }}</a>
-</div>
+  {% endif %}
+  </div>
 
 
 
