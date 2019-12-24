@@ -699,6 +699,7 @@ ShopifyAPI.onError = function(XMLHttpRequest) {
     - Allow custom error callback
 ==============================================================================*/
 ShopifyAPI.addItemFromForm = function(form, callback, errorCallback) {
+  showDrawerOnCartUpdated = true;
   var formData = new FormData(form);
   var params = {
     type: 'POST',
@@ -715,6 +716,7 @@ ShopifyAPI.addItemFromForm = function(form, callback, errorCallback) {
       }
     },
     error: function(XMLHttpRequest, textStatus) {
+      showDrawerOnCartUpdated = false;
       if (typeof errorCallback === 'function') {
         errorCallback(XMLHttpRequest, textStatus);
       } else {
@@ -1494,6 +1496,7 @@ timber.resetPasswordSuccess = function() {
   Drawer modules
   - Docs http://shopify.github.io/Timber/#drawers
 ==============================================================================*/
+var showDrawerOnCartUpdated = false;
 timber.Drawers = (function() {
   var Drawer = function(id, position, options) {
     var defaults = {
@@ -1621,6 +1624,7 @@ timber.Drawers = (function() {
   };
 
   Drawer.prototype.close = function(evt) {
+    showDrawerOnCartUpdated = false;
     // don't close a closed drawer
     if (!this.drawerIsOpen) {
       return;
@@ -3585,6 +3589,10 @@ theme.afterCartLoad = function() {
     while the cart was loading.
     timber.RightDrawer.open();
     */
+    if(showDrawerOnCartUpdated) {
+      showDrawerOnCartUpdated = false;
+      timber.RightDrawer.open();
+    }
 
     // Size the cart's fixed footer
     theme.sizeCartDrawerFooter();
