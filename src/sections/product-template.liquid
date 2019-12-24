@@ -326,6 +326,18 @@
                 {% if section.settings.enable_payment_button %}
                   {{ form | payment_button }}
                 {% endif %}
+                {% if section.settings.trust_badges_enable %}
+                <div id="flairsome-trust-badges">
+                  <a name="trustbadge" href="https://trustlock.co" target="_blank" style="flex-shrink: 1">
+                    <img name="trustseal" alt="Guaranteed Safe Checkout" style="max-height: 88px" src="https://trustlock.co/wp-content/uploads/2019/01/guaranteed-safe-checkout-8.png">
+                  </a>
+                  <!-- PayPal Logo -->
+                  <a style="flex-grow: 1; max-width: 319px" href="https://www.paypal.com/webapps/mpp/paypal-popup" title="We accept PayPal" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">
+                    <img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/IN/logo-center/logo-center-solution-graphics.png" alt="PayPal Acceptance Mark">
+                  </a>
+                  <!-- PayPal Logo -->
+                </div>
+                {% endif %}
               </div>
             {% endform %}
 
@@ -804,6 +816,34 @@
           }
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "trust_badges_enable",
+      "label": {
+        "de": "Show trust badges",
+        "en": "Show trust badges",
+        "es": "Show trust badges",
+        "fr": "Show trust badges",
+        "it": "Show trust badges",
+        "ja": "Show trust badges",
+        "nl": "Show trust badges",
+        "pt-BR": "Show trust badges",
+        "zh-CN": "Show trust badges",
+        "zh-TW": "Show trust badges"
+      },
+      "info": {
+        "de": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "en": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "es": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "fr": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "it": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "ja": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "nl": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "pt-BR": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "zh-CN": "Show Trustlock and PayPal badges just below the Add To Cart button",
+        "zh-TW": "Show Trustlock and PayPal badges just below the Add To Cart button"
+      }
     },
     {
       "type": "checkbox",
