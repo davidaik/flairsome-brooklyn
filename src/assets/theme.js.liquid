@@ -3579,7 +3579,12 @@ theme.sizeCartDrawerFooter = function() {
 theme.afterCartLoad = function() {
   theme.cache.$body.on('ajaxCart.afterCartLoad', function(evt, cart) {
     // Open cart drawer
+    /*
+    Commented out by David.
+    This line causes the drawer to open by itself after being closed
+    while the cart was loading.
     timber.RightDrawer.open();
+    */
 
     // Size the cart's fixed footer
     theme.sizeCartDrawerFooter();

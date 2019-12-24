@@ -109,7 +109,7 @@
                 </div>
               {% endif %}
             </div>
-            <nav class="grid__item large--two-thirds large--text-right medium-down--hide" role="navigation">
+            <nav class="grid__item large--two-thirds large--text-right medium-down--hide flex-grow-1 flex-shrink-0" role="navigation">
               {% comment %}
                 List out your main-menu linklist (default)
 
@@ -256,12 +256,14 @@
             </nav>
             <div class="grid__item large--hide one-quarter">
               <div class="site-nav--mobile text-right">
+                {% if section.settings.nav_search_on_mobile %}
                 <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon{% if search_modal %} js-toggle-search-modal{% endif %}" data-mfp-src="#SearchModal">
                   <span class="icon-fallback-text">
                     <span class="icon icon-search" aria-hidden="true"></span>
                     <span class="fallback-text">{{ 'general.search.title' | t }}</span>
                   </span>
                 </a>
+                {% endif %}
                 <a href="{{ routes.cart_url }}" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
                   <span class="icon-fallback-text">
                     <span class="icon icon-cart" aria-hidden="true"></span>
@@ -524,6 +526,32 @@
         "zh-CN": "搜索类型",
         "zh-TW": "搜尋類型"
       }
+    },
+    {
+      "type": "checkbox",
+      "id": "nav_search_on_mobile",
+      "label": {
+        "da": "Show search button on mobile navbar",
+        "de": "Show search button on mobile navbar",
+        "en": "Show search button on mobile navbar",
+        "es": "Show search button on mobile navbar",
+        "fi": "Show search button on mobile navbar",
+        "fr": "Show search button on mobile navbar",
+        "hi": "Show search button on mobile navbar",
+        "it": "Show search button on mobile navbar",
+        "ja": "Show search button on mobile navbar",
+        "ko": "Show search button on mobile navbar",
+        "ms": "Show search button on mobile navbar",
+        "nb": "Show search button on mobile navbar",
+        "nl": "Show search button on mobile navbar",
+        "pt-BR": "Show search button on mobile navbar",
+        "pt-PT": "Show search button on mobile navbar",
+        "sv": "Show search button on mobile navbar",
+        "th": "Show search button on mobile navbar",
+        "zh-CN": "Show search button on mobile navbar",
+        "zh-TW": "Show search button on mobile navbar"
+      },
+      "default": true
     },
     {
       "type": "link_list",
