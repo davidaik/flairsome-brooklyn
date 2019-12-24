@@ -94,6 +94,10 @@
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "taxes_included_and_shipping_free_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> is free.",
+      "include_taxes": "Tax included.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "free_shipping": "Free Shipping.",
+      "free_shipping_html": "Free <a href=\"{{ link }}\">Shipping</a>.",
       "update": "Update Cart",
       "checkout": "Check Out",
       "empty": "Your cart is currently empty.",
@@ -113,6 +117,7 @@
     "general": {
       "catalog_title": "Catalog",
       "all_of_collection": "All",
+      "view_all": "View all",
       "no_matches": "Sorry, there are no products in this collection."
     },
     "sorting": {
