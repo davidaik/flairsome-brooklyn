@@ -24,7 +24,7 @@ The official theme was exported and ported to Slate 0.14.0, so now this theme is
 
 1. Make the Payful style the default.
 2. Removed 'Powered by Shopify' text.
-3. The value for "Shipping" is now "Free" on the Checkout page.
+3. The default value for "Shipping" is now "Free" on the Checkout page.
 4. Made code a little bit more efficient in featured_products.liquid
 
 
