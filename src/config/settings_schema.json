@@ -2229,5 +2229,37 @@
         }
       }
     ]
+  },
+  {
+    "name": {
+      "de": "Password page",
+      "en": "Password page",
+      "es": "Password page",
+      "fr": "Password page",
+      "it": "Password page",
+      "ja": "Password page",
+      "nl": "Password page",
+      "pt-BR": "Password page",
+      "zh-CN": "Password page",
+      "zh-TW": "Password page"
+    },
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "password_page_background",
+        "label": {
+          "de": "Password page background",
+          "en": "Password page background",
+          "es": "Password page background",
+          "fr": "Password page background",
+          "it": "Password page background",
+          "ja": "Password page background",
+          "nl": "Password page background",
+          "pt-BR": "Password page background",
+          "zh-CN": "Password page background",
+          "zh-TW": "Password page background"
+        }
+      }
+    ]
   }
 ]

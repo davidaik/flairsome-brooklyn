@@ -3970,7 +3970,11 @@ button.mfp-arrow {
   width: 100%;
 
   @if $passwordPageUseBgImage {
+    {% if settings.password_page_background != blank %}
+    background-image: url("{{ settings.password_page_background | img_url: '1300x1000' }}");
+    {% else %}
     background-image: url({{ "password-page-background.jpg" | asset_url }});
+    {% endif %}
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
