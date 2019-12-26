@@ -32,8 +32,8 @@
                   {{/properties}}
                 </div>
 
-                <div class="grid--full">
-                  <div class="grid__item one-half">
+                <div class="flex-row align-items-center">
+                  <div>
                     <div class="ajaxcart__qty">
                       <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-id="{{key}}" data-qty="{{itemMinus}}" data-line="{{line}}" aria-label="{% endraw %}{{ 'cart.general.reduce_quantity' | t }}{% raw %}">
                         <span class="icon icon-minus" aria-hidden="true"></span>
@@ -46,8 +46,13 @@
                       </button>
                     </div>
                   </div>
-                  <div class="grid__item one-half text-right">
-                    {{#if discountsApplied}}
+                  <div class="flex-grow-1 flex-row align-items-center">
+                    <button type="button" class="ajaxcart__remove" data-id="{{key}}" data-line="{{line}}" data-qty="0" aria-label="{% endraw %}{{ 'cart.general.remove' | t }}">
+                      {{ 'cart.general.remove' | t }}
+                    </button>
+                  </div>
+                  <div class="text-right">
+                    {% raw %}{{#if discountsApplied}}
                       <span class="visually-hidden">{% endraw %}{{ 'products.general.regular_price' | t }}{% raw %}</span>
                       <del class="ajaxcart__price">{{{price}}}</del>
                       <span class="visually-hidden">{% endraw %}{{ 'products.general.sale_price' | t }}{% raw %}</span>

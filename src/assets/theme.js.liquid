@@ -1093,6 +1093,19 @@ var ajaxCart = (function(module, $) {
       }
     });
 
+    // Remove an item from cart
+    $body.on('click', '.ajaxcart__remove', function() {
+      if (isUpdating) {
+        return;
+      }
+      var $el = $(this),
+        line = $el.data('line');
+
+      if (line) {
+        updateQuantity(line, 0);
+      }
+    });
+
     // Update quantity based on input on change
     $body.on('change', '.ajaxcart__qty-num', function() {
       if (isUpdating) {
