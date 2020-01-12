@@ -32,22 +32,22 @@
                   {{/properties}}
                 </div>
 
-                <div class="flex-row align-items-center">
-                  <div>
-                    <div class="ajaxcart__qty">
-                      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-id="{{key}}" data-qty="{{itemMinus}}" data-line="{{line}}" aria-label="{% endraw %}{{ 'cart.general.reduce_quantity' | t }}{% raw %}">
-                        <span class="icon icon-minus" aria-hidden="true"></span>
-                        <span class="fallback-text" aria-hidden="true">&minus;</span>
-                      </button>
-                      <input type="text" name="updates[]" class="ajaxcart__qty-num" value="{{itemQty}}" min="0" data-id="{{key}}" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
-                      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemAdd}}" aria-label="{% endraw %}{{ 'cart.general.increase_quantity' | t }}{% raw %}">
-                        <span class="icon icon-plus" aria-hidden="true"></span>
-                        <span class="fallback-text" aria-hidden="true">+</span>
-                      </button>
+                <div class="flex-row align-items-start">
+                  <div class="flex-grow-1 flex-row align-items-start flex-wrap-wrap">
+                    <div class="mr-1 mb-2">
+                      <div class="ajaxcart__qty">
+                        <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-id="{{key}}" data-qty="{{itemMinus}}" data-line="{{line}}" aria-label="{% endraw %}{{ 'cart.general.reduce_quantity' | t }}{% raw %}">
+                          <span class="icon icon-minus" aria-hidden="true"></span>
+                          <span class="fallback-text" aria-hidden="true">&minus;</span>
+                        </button>
+                        <input type="text" name="updates[]" class="ajaxcart__qty-num" value="{{itemQty}}" min="0" data-id="{{key}}" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
+                        <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemAdd}}" aria-label="{% endraw %}{{ 'cart.general.increase_quantity' | t }}{% raw %}">
+                          <span class="icon icon-plus" aria-hidden="true"></span>
+                          <span class="fallback-text" aria-hidden="true">+</span>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="flex-grow-1 flex-row align-items-center">
-                    <button type="button" class="ajaxcart__remove" data-id="{{key}}" data-line="{{line}}" data-qty="0" aria-label="{% endraw %}{{ 'cart.general.remove' | t }}">
+                    <button type="button" class="ajaxcart__remove mr-1" data-id="{{key}}" data-line="{{line}}" data-qty="0" aria-label="{% endraw %}{{ 'cart.general.remove' | t }}">
                       {{ 'cart.general.remove' | t }}
                     </button>
                   </div>
