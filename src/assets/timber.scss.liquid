@@ -2077,6 +2077,10 @@ $socialIconFontStack: 'icons';
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  .is-loading & {
+    opacity: 0.5;
+    @include transition(none);
+  }
 }
 
 /*================ Quantity Selectors ================*/
